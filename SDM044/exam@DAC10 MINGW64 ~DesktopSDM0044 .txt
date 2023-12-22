@@ -1,0 +1,80 @@
+exam@DAC10 MINGW64 ~/Desktop/SDM0044 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+exam@DAC10 MINGW64 ~/Desktop/SDM0044 (master)
+$ git commit -m "First Commit For CDAC EXAM"
+On branch master
+nothing to commit, working tree clean
+
+exam@DAC10 MINGW64 ~/Desktop/SDM0044(master)
+$ git branch -M main
+
+exam@DAC10 MINGW64 ~/Desktop/SDM0044 (main)
+$ git remote add origin https://github.com/DarkDeveloper04/MyProject.git
+
+exam@DAC10 MINGW64 ~/Desktop/SDM0044 (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 227 bytes | 227.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/DarkDeveloper04/MyProject.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+exam@DAC10 MINGW64 ~/Desktop/SDM0044 (main)
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+exam@DAC10 MINGW64 ~/Desktop/SDM0044 (main)
+$ git branch collaborator
+
+exam@DAC10 MINGW64 ~/Desktop/SDM0044 (main)
+$ git checkout collaborator
+Switched to branch 'collaborator'
+
+exam@DAC10 MINGW64 ~/Desktop/SDM0044 (collaborator)
+$ git status
+On branch collaborator
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Q1_Git_Command.txt
+        index.html
+        myProject.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+exam@DAC10 MINGW64 ~/Desktop/SDM0044 (collaborator)
+$ git add .
+
+exam@DAC10 MINGW64 ~/Desktop/SDM0044 (collaborator)
+$ git commit -m "Commit From collaborator branch"
+[collaborator 1016c01] Commit From collaborator branch
+ 3 files changed, 11 insertions(+)
+ create mode 100644 Q1_Git_Command.txt
+ create mode 100644 index.html
+ create mode 100644 myProject.txt
+
+exam@DAC10 MINGW64 ~/Desktop/SDM0044 (collaborator)
+$ git push -u origin collaborator
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 481 bytes | 481.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'collaborator' on GitHub by visiting:
+remote:      https://github.com/DarkDeveloper04/MyProject/pull/new/collaborator
+remote:
+To https://github.com/Harrykute/TeamProjectCDAC.git
+ * [new branch]      collaborator -> collaborator
+branch 'collaborator' set up to track 'origin/collaborator'.
+
+exam@DAC10 MINGW64 ~/Desktop/SDM0044 (collaborator)
+$ git merge main
+Already up to date.
